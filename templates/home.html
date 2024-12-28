@@ -1,0 +1,23 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  {% include 'header.html' %} 
+  <body class="p-3 m-0 border-0 bd-example">
+
+
+    {% include 'nav.html' %} 
+
+    <img class="gif" src="{% static 'images/book.webp' %}" alt="Book GIF" width="100%">
+    <div class="centered">
+      <h5>“The more that you read, the more things you will know. <br/>
+        The more that you learn, the more places you'll go.”<br/>
+         “Books are a uniquely portable magic.” <br/>
+         “I kept always two books in my pocket,<br/>
+          one to read, one to write in.”</h5>
+    </div>
+  </div>
+
+  {% include 'footer.html' %} 
+</body>
+</html>

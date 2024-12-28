@@ -1,0 +1,264 @@
+body {
+background-color: rgb(201, 76, 76);
+}
+
+.navbar{
+  border: 2.5px solid white;
+}
+
+.image{
+  border: 2.5px solid white;
+}
+
+.images{
+  background-image: url("book.webp");
+  padding-bottom: 100px;
+  height: 100px;
+  float:left;
+}
+
+
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+  border: 2.5px solid white;
+}
+
+
+
+/* Reset and base styles */
+
+/* Your existing styles here */
+
+/* Navbar styles (hypothetical) */
+header {
+  background: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/* Custom CSS styles */
+.gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border:2.5px solid white;
+  
+}
+
+/* Centered text */
+.centered {
+  color: whitesmoke;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+/* Add Book Button Styles */
+.add-book-button {
+  background-color: #FF204E; 
+  color: white; 
+  border: 2.5px solid #A0153E;
+  border-radius: 8px; 
+  padding: 12px 24px; 
+  font-family: "Playfair Display", serif; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  font-size: 16px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.add-book-button:hover {
+  background-color: #A0153E;
+  color: white; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-2px); 
+}
+
+.add-book-button:focus {
+  outline: none; 
+  box-shadow: 0 0 0 4px rgba(93, 14, 65, 0.5); 
+  color: white; 
+}
+
+/* Optional: Add a gradient background */
+.add-book-button-gradient {
+  background: linear-gradient(135deg, #FF204E, #A0153E, #5D0E41, #00224D); 
+  color: white; 
+}
+
+
+
+/* Modal Background */
+.modal-content {
+  background-color: #00224D; /* Dark blue background for the modal */
+  color: white; /* White text for readability */
+  border-radius: 8px; /* Rounded corners for the modal */
+}
+
+/* Modal Header */
+.modal-header {
+  border-bottom: 1px solid #FF204E; /* Bright pink border for separation */
+  background-color: #A0153E; /* Dark red background for the header */
+  color: white; /* White text */
+}
+
+/* Modal Body */
+.modal-body {
+  color: white; /* White text */
+}
+
+/* Modal Footer */
+.modal-footer {
+  border-top: 1px solid #FF204E; /* Bright pink border */
+  background-color: #5D0E41; /* Dark purple background */
+  color: white; /* White text */
+}
+
+/* Modal Close Button */
+.btn-close {
+  filter: invert(1); /* Invert colors to make the close button visible on dark background */
+}
+
+/* Table Styles */
+.table {
+  width: 100%;
+  border-collapse: collapse; 
+}
+
+.table th, .table td {
+  border: 1px solid #5D0E41; 
+  padding: 8px; 
+  text-align: left; 
+}
+
+.table thead th {
+  background-color: #00224D; 
+  color: white; 
+  border-bottom: 2px solid #A0153E; 
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #FF204E; 
+  color: white; 
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #FF204E; 
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #e00833;
+  color: white; 
+}
+
+.table tbody th {
+  background-color: #FF204E; 
+  color: white; 
+  border-right: 1px solid #5D0E41;
+}
+
+.table tbody td {
+  border-right: 1px solid #5D0E41;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: 1px solid #5D0E41;
+}
+
+/* Button Styles */
+.edit-button {
+  background-color: #00224D; 
+  color: white; 
+  border: 2.5px solid #A0153E;
+  border-radius: 8px; 
+  padding: 12px 24px; 
+  font-family: "Playfair Display", serif; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  font-size: 16px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #5D0E41;
+  color: white; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-2px); 
+}
+
+.delete-button {
+  background-color: #00224D; 
+  color: white; 
+  border: 2.5px solid #00224D;
+  border-radius: 8px; 
+  padding: 12px 24px; 
+  font-family: "Playfair Display", serif; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  font-size: 16px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #5D0E41;
+  color: white; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-2px); 
+}
+
+.save-button {
+  background-color: #00224D; 
+  color: white; 
+  border: 2.5px solid #5D0E41;
+  border-radius: 8px; 
+  padding: 12px 24px; 
+  font-family: "Playfair Display", serif; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  font-size: 16px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.save-button:hover {
+  background-color: #5D0E41;
+  color: white; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+  transform: translateY(-2px); 
+}
